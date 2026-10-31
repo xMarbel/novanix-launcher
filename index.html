@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:">
+<title>Novanix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><img src="assets/logo.svg" alt=""><h1>NOVANIX</h1></header>
+<main>
+  <section class="card" id="loginCard">
+    <h2>Logowanie</h2>
+    <button id="msBtn" class="btn">Zaloguj przez Microsoft</button>
+    <div class="or">lub tryb testowy (offline)</div>
+    <div class="row"><input id="nick" placeholder="Nick" maxlength="16"><button id="offBtn" class="btn ghost">Wejdź</button></div>
+    <p id="who" class="who"></p>
+  </section>
+  <section class="card">
+    <h2>Gra</h2>
+    <label>Wersja Minecrafta</label>
+    <select id="ver"><option>Ładowanie…</option></select>
+    <label>Pamięć RAM: <b id="ramVal">4</b> GB</label>
+    <input id="ram" type="range" min="2" max="16" value="4">
+    <button id="playBtn" class="btn big" disabled>GRAJ</button>
+    <div class="bar"><div id="barIn"></div></div>
+    <p id="status" class="status">Zaloguj się, aby zagrać.</p>
+  </section>
+</main>
+<script src="renderer.js"></script>
+</body>
+</html>

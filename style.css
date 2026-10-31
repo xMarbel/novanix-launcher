@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#e8ecff;font-family:"Segoe UI",system-ui,sans-serif;
+ background:radial-gradient(ellipse at 50% 0%,#2a1f6b 0%,#120d3a 45%,#070520 100%)}
+header{display:flex;align-items:center;gap:14px;padding:18px 28px;border-bottom:1px solid #ffffff14}
+header img{width:44px;height:44px}
+h1{margin:0;font-size:22px;letter-spacing:.2em}
+main{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:28px}
+.card{background:#ffffff0d;border:1px solid #ffffff1f;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+h2{margin:0 0 4px;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:#8fb4ff}
+label{font-size:13px;color:#b8c2ee}
+input,select{background:#0b0830;color:#fff;border:1px solid #ffffff2e;border-radius:10px;padding:10px 12px;font-size:14px;width:100%}
+input[type=range]{padding:0;accent-color:#7c5cff}
+.row{display:flex;gap:8px}
+.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:700;color:#fff;cursor:pointer;
+ background:linear-gradient(90deg,#38bdf8,#8b5cf6,#f472b6)}
+.btn.ghost{background:#ffffff1a;white-space:nowrap}
+.btn.big{padding:15px;font-size:17px;letter-spacing:.25em;margin-top:6px}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.or{text-align:center;font-size:12px;color:#8e98c8}
+.who{margin:0;color:#7dffb0;font-size:14px;min-height:18px}
+.bar{height:8px;border-radius:6px;background:#ffffff14;overflow:hidden}
+#barIn{height:100%;width:0;background:linear-gradient(90deg,#38bdf8,#f472b6);transition:width .2s}
+.status{margin:0;font-size:13px;color:#b8c2ee;min-height:18px}
