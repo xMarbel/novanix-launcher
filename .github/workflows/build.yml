@@ -1,0 +1,25 @@
+   name: Zbuduj launcher
+
+   on:
+     workflow_dispatch:
+     push:
+       tags: ["v*"]
+
+   permissions:
+     contents: write
+
+   jobs:
+     build:
+       runs-on: windows-latest
+       steps:
+         - uses: actions/checkout@v4
+         - uses: actions/setup-node@v4
+           with:
+             node-version: 20
+         - run: npm install
+         - run: npx electron-builder --win --publish never
+         - uses: softprops/action-gh-release@v2
+           with:
+             tag_name: v0.1.${{ github.run_number }}
+             name: Novanix Launcher v0.1.${{ github.run_number }}
+             files: dist/NovanixSetup.exe
